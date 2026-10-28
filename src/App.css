@@ -16,7 +16,6 @@ a { color: inherit; }
 
 .site-shell {
   min-height: 100vh;
-  overflow: hidden;
   background:
     radial-gradient(circle at 50% 19%, rgba(0,180,245,.09), transparent 21rem),
     linear-gradient(180deg, #050509 0%, #080910 100%);
@@ -36,6 +35,7 @@ a { color: inherit; }
  border-bottom: 1px solid rgba(255,255,255,.1);
  background: rgba(0,0,0,.6);
  backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
 }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-mark { color: var(--accent); font-size: 22px; line-height: 1; font-weight: 600; letter-spacing: 0; }
