@@ -237,7 +237,7 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 .contact-form textarea { height: 120px; }
 .contact-form input:focus, .contact-form textarea:focus { box-shadow: inset 0 0 0 1px rgba(0,180,255,.65); }
 .contact-form input::placeholder, .contact-form textarea::placeholder { color: #737b85; }
-.contact-form button { height: 44px; border: 0; border-radius: 8px; margin-top: 12px; background: linear-gradient(90deg, #00b4ff 0%, #00ffe0 100%); color: #fff; box-shadow: 0 10px 30px rgba(0,180,255,.16); color: #041018; font-weight: 700; cursor: pointer; }
+.contact-form button { height: 44px; border: 0; border-radius: 8px; margin-top: 12px; background: linear-gradient(90deg, #00b4ff 0%, #00ffe0 100%); color: #fff; box-shadow: 0 10px 30px rgba(0,180,255,.16); color: #fff; font-weight: 700; cursor: pointer; }
 .home-connect { grid-column: 1 / -1; margin-top: 70px; text-align: center; }
 .home-connect h2 { margin: 0 0 1rem; font-size: 26px; font-weight: 600; }
 .social-grid { display: flex; grid-template-columns: none; justify-content: center; gap: 22px; }
