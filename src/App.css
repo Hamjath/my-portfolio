@@ -218,6 +218,19 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 .contact-page { text-align: center; }
 .contact-lead { color: var(--muted); font-size: 18px; }
 .contact-main { display: inline-flex; gap: 20px; margin: 25px 0 50px; }
+.contact-page { max-width: 760px; }
+.contact-page > h1 { color: var(--accent); font-size: clamp(34px, 5vw, 48px); letter-spacing: -1px; margin-bottom: 18px; }
+.contact-page > h1 span:not(.contact-heart) { color: var(--accent); }
+.contact-heart { font-size: .9em; }
+.contact-page .contact-lead { margin-bottom: 28px; }
+.contact-page .social-grid { margin-bottom: 42px; gap: 18px; }
+.contact-page .social-grid a { width: 64px; height: 64px; border: 2px solid rgba(25,184,237,.75); background: rgba(4,8,12,.75); display: grid; place-items: center; }
+.contact-page .social-icon { width: 30px; height: 30px; border-radius: 4px; object-fit: contain; }
+.contact-form { display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 680px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { width: 100%; border: 0; border-bottom: 1px solid rgba(25,184,237,.16); border-radius: 0; outline: none; background: transparent; color: var(--text); padding: 18px 12px; font-size: 16px; resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { border-bottom-color: var(--accent); }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #737b85; }
+.contact-form button { height: 50px; border: 0; border-radius: 5px; margin-top: 18px; background: linear-gradient(90deg, #19aee8, #27b9bd); color: #041018; font-weight: 700; cursor: pointer; }
 .home-connect { grid-column: 1 / -1; margin-top: 70px; text-align: center; }
 .home-connect h2 { margin: 0 0 1rem; font-size: 26px; font-weight: 600; }
 .social-grid { display: flex; grid-template-columns: none; justify-content: center; gap: 22px; }
