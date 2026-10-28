@@ -183,7 +183,7 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 }
 
 .page-section { width: min(1050px, calc(100% - 48px)); min-height: calc(100vh - 170px); margin: 0 auto; padding: 55px 0 100px; }
-.page-section > h1 { font-size: clamp(42px, 6vw, 68px); letter-spacing: -2px; margin: 8px 0 38px; }
+.page-section > h1 { font-size: clamp(36px, 5vw, 48px); letter-spacing: -1px; margin: 8px 0 38px; }
 .page-kicker { color: var(--accent); text-transform: uppercase; letter-spacing: 3px; }
 .desktop-nav a.active { color: var(--accent); }
 .desktop-nav a.active::after { right: 0; }
