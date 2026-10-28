@@ -147,7 +147,7 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 13px; bor
   .brand-copy { padding-left: 0; }
   .brand-copy strong { font-size: 14px; }
   .brand-copy small { display: block; font-size: 12px; }
-  .desktop-nav { display: flex; gap: 1.8rem; margin-right: 0; }
+  .desktop-nav { display: flex; flex-grow: 1; justify-content: center; gap: 1.8rem; margin-left: 0; margin-right: 0; }
   .desktop-nav a { font-size: 0.95rem; line-height: 1; font-weight: 500; white-space: nowrap; }
   .menu-button { display: none; }
 }
