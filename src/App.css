@@ -196,6 +196,8 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 .about-grid h3 { margin-bottom: 8px; }
 .about-grid p { color: var(--muted); line-height: 1.7; }
 .experience-duration { color: var(--accent); white-space: nowrap; }
+.education-item + .education-item { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border); }
+.education-item h3 { color: var(--text); }
 .about-grid article ul { color: var(--muted); line-height: 1.65; padding-left: 20px; margin-bottom: 26px; }
 .about-grid article li { margin-bottom: 10px; }
 .about-grid article ul strong { color: var(--text); }
