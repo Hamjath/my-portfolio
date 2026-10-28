@@ -61,9 +61,9 @@ a { color: inherit; }
 .menu-backdrop { position: fixed; inset: 0; border: 0; background: rgba(0,0,0,.55); z-index: 28; }
 
 .hero-section { max-width: 1050px; margin: 0 auto; padding: 32px 24px 36px; text-align: center; }
-.portrait-wrap { width: 360px; height: 360px; margin: 0 auto 30px; position: relative; display: grid; place-items: center; }
+.portrait-wrap { width: 360px; height: 360px; aspect-ratio: 1; align-self: center; margin: 0 auto 30px; position: relative; display: grid; place-items: center; }
 .portrait-glow { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, rgba(18,188,240,.28), rgba(18,188,240,.05) 58%, transparent 70%); filter: blur(7px); }
-.portrait { position: relative; width: 92%; height: 92%; object-fit: cover; border-radius: 50%; border: 3px solid var(--accent); box-shadow: 0 0 35px rgba(25,184,237,.35), 0 0 90px rgba(25,184,237,.12); animation: portraitFloat 3.2s ease-in-out infinite; }
+.portrait { position: relative; width: 92%; height: 92%; aspect-ratio: 1; box-sizing: border-box; object-fit: cover; border-radius: 50%; border: 3px solid var(--accent); box-shadow: 0 0 35px rgba(25,184,237,.35), 0 0 90px rgba(25,184,237,.12); animation: portraitFloat 3.2s ease-in-out infinite; }
 @keyframes portraitFloat { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-14px) scale(1.015); } }
 .hero-copy h1 { margin: 0; font-size: clamp(42px, 6vw, 72px); letter-spacing: -3px; line-height: 1; }
 .hero-copy h1 span { color: var(--accent); }
@@ -137,7 +137,7 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
   .hero-section { max-width: 1180px; min-height: 520px; display: grid; grid-template-columns: 390px 1fr; grid-template-rows: auto auto; align-items: center; column-gap: 70px; text-align: left; padding: 18px 24px 20px; }
   .portrait-wrap { grid-row: 1 / span 2; width: 330px; height: 330px; }
   .hero-copy { align-self: end; }
-  .hero-copy .eyebrow { display: none; }
+  .hero-copy .eyebrow { display: block; }
   .hero-copy h1 { font-size: clamp(42px, 5vw, 52px); line-height: 1.05; white-space: nowrap; }
   .hero-role { font-size: clamp(18px, 1.7vw, 21px); line-height: 1.45; }
   .skill-cloud { justify-content: flex-start; }
