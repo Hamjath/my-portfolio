@@ -195,6 +195,9 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 .about-grid h2 { color: var(--accent); }
 .about-grid h3 { margin-bottom: 8px; }
 .about-grid p { color: var(--muted); line-height: 1.7; }
+.about-grid article ul { color: var(--muted); line-height: 1.65; padding-left: 20px; margin-bottom: 26px; }
+.about-grid article li { margin-bottom: 10px; }
+.about-grid article ul strong { color: var(--text); }
 .skill-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .skill-group h2 { margin-top: 0; }
 .skill-group div { display: flex; flex-wrap: wrap; gap: 10px; }
