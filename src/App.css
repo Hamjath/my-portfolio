@@ -189,7 +189,7 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 .desktop-nav a.active::after { right: 0; }
 .about-intro { display: grid; grid-template-columns: 220px 1fr; gap: 38px; align-items: start; }
 .about-intro img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 3px solid var(--accent); box-shadow: 0 0 30px rgba(25,184,237,.25); }
-.about-intro p { color: #cfd3dd; font-size: 17px; line-height: 1.85; margin-top: 0; }
+.about-intro p { color: #cfd3dd; font-size: 17px; line-height: 1.85; margin-top: 0; text-align: justify; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 45px; }
 .about-grid article, .skill-group, .empty-card, .resume-card { background: rgba(255,255,255,.025); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
 .about-grid h2 { color: var(--accent); }
