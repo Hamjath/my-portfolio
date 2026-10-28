@@ -40,8 +40,8 @@ a { color: inherit; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-mark { color: var(--accent); font-size: 22px; line-height: 1; font-weight: 600; letter-spacing: 0; }
 .brand-copy { display: flex; flex-direction: column; border-left: 0; padding-left: 0; }
-.brand-copy strong { font-size: 14px; font-weight: 700; }
-.brand-copy small { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.brand-copy strong { font-size: 14px; font-weight: 700; white-space: nowrap; }
+.brand-copy small { color: var(--muted); font-size: 12px; margin-top: 2px; white-space: nowrap; }
 .desktop-nav { display: none; align-items: center; gap: 2rem; margin-left: auto; margin-right: 0; }
 .desktop-nav a { position: relative; color: #fff; text-decoration: none; font-size: .95rem; font-weight: 500; }
 .desktop-nav a:first-child { color: var(--accent); }
