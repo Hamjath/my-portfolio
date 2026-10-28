@@ -11,7 +11,10 @@ const projects = [
 ];
 const skillGroups = [['Programming',['C#','Python','JavaScript','SQL']],['Frameworks',['ASP.NET MVC','.NET','React','Flask']],['AI & Data',['Machine Learning','Computer Vision','Deep Learning','Data Science']],['Tools',['Git','GitHub','SQL Server','Docker','REST APIs']]];
 
-function Icon({type}) { return <span aria-hidden="true">{{linkedin:'in',github:'GH',email:'@',whatsapp:'WA'}[type]}</span>; }
+function Icon({type}) {
+ const files = { linkedin: 'linkedin.png', github: 'github.png', email: 'gmail.png', whatsapp: 'whatsapp.png' };
+ return <img className="social-icon" src={`/${files[type]}`} alt="" aria-hidden="true" />;
+}
 
 export default function App() {
  const [path,setPath] = useState(window.location.pathname.replace(/\/$/, '') || '/');
