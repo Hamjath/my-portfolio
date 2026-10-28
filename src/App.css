@@ -224,12 +224,13 @@ footer { text-align: center; padding: 28px; color: #777b86; font-size: 15px; bor
 .contact-heart { font-size: .9em; }
 .contact-page .contact-lead { margin-bottom: 28px; }
 .contact-page .social-grid { margin-bottom: 42px; gap: 18px; }
-.contact-page .social-grid a { width: 64px; height: 64px; border: 2px solid rgba(25,184,237,.75); background: rgba(4,8,12,.75); display: grid; place-items: center; animation: contactIconFloat 2.8s ease-in-out infinite; }
+.contact-page .social-grid a { width: 54px; height: 54px; border: 2px solid rgba(0,200,255,.9); background: rgba(4,8,12,.75); display: grid; place-items: center; animation: contactIconFloat 4.2s ease-in-out infinite; }
 .contact-page .social-grid a:nth-child(1) { animation-delay: -.1s; }
 .contact-page .social-grid a:nth-child(2) { animation-delay: -.8s; }
 .contact-page .social-grid a:nth-child(3) { animation-delay: -1.5s; }
 .contact-page .social-grid a:nth-child(4) { animation-delay: -.45s; }
-.contact-page .social-icon { width: 34px; height: 34px; border-radius: 50%; object-fit: contain; }
+.contact-page .social-icon { width: 38px; height: 38px; border-radius: 50%; object-fit: contain;
+.contact-handshake { font-size: .78em; filter: saturate(1.15); } }
 @keyframes contactIconFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 .contact-form { display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 680px; margin: 0 auto; }
 .contact-form input, .contact-form textarea { width: 100%; border: 0; border-bottom: 1px solid rgba(25,184,237,.16); border-radius: 0; outline: none; background: transparent; color: var(--text); padding: 18px 12px; font-size: 16px; resize: vertical; }
