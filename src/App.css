@@ -158,11 +158,11 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 
 @media (min-width: 700px) {
   .topbar { height: 72px; }
-  .hero-section { max-width: 1180px; min-height: 520px; display: grid; grid-template-columns: 390px 1fr; grid-template-rows: auto auto; align-items: center; column-gap: 70px; text-align: left; padding: 72px 24px 20px; }
-  .portrait-wrap { grid-row: 1 / span 2; width: 330px; height: 330px; }
+  .hero-section { max-width: 1080px; min-height: 520px; display: grid; grid-template-columns: 350px 1fr; grid-template-rows: auto auto; align-items: center; column-gap: 55px; text-align: left; padding: 72px 24px 20px; }
+  .portrait-wrap { grid-row: 1 / span 2; width: 300px; height: 300px; justify-self: center; }
   .hero-copy { align-self: end; }
   .hero-copy .eyebrow { display: block; }
-  .hero-copy h1 { font-size: clamp(42px, 5vw, 52px); line-height: 1.05; white-space: nowrap; }
+  .hero-copy h1 { font-size: clamp(40px, 4.5vw, 48px); line-height: 1.05; white-space: nowrap; }
   .hero-role { font-size: clamp(18px, 1.7vw, 21px); line-height: 1.45; }
   .skill-cloud { justify-content: flex-start; }
   .skill-cloud span { font-size: 16px; padding: 8px 16px; }
