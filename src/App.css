@@ -272,6 +272,41 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 .resume-card a, .contact-main { text-decoration: none; color: #fff; border: 1px solid var(--accent); border-radius: 7px; padding: 11px 16px; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
 .resume-card a:hover, .contact-main:hover { transform: translateY(-2px) scale(1.03); background: rgba(25,184,237,.12); box-shadow: 0 8px 24px rgba(25,184,237,.18); }
 .resume-card a:active, .contact-main:active, .contact-form button:active, .filters button:active { transform: scale(.96); }
+.resume-page { max-width: 1180px; }
+.resume-heading { margin-bottom: 30px; }
+.resume-heading h1 { margin-bottom: 8px; }
+.resume-heading h1 span { filter: hue-rotate(155deg); }
+.resume-heading > p:last-child { color: var(--muted); }
+.resume-profile { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 50px; }
+.resume-profile article { min-height: 180px; padding: 24px; border: 1px solid rgba(25,184,237,.18); border-radius: 12px; background: rgba(255,255,255,.025); }
+.resume-identity { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.resume-avatar { width: 76px; height: 76px; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--accent); color: var(--accent); font-size: 24px; font-weight: 800; box-shadow: 0 0 24px rgba(25,184,237,.18); }
+.resume-identity h2 { margin: 0 0 5px; font-size: 24px; color: var(--accent); }
+.resume-identity p { margin: 2px 0; color: #dce1eb; }
+.resume-identity ul { margin: 14px 0 0; padding: 0; display: grid; gap: 4px; list-style: none; color: var(--muted); font-size: 13px; }
+.resume-summary h3 { margin-top: 0; color: var(--accent); }
+.resume-summary p { margin-bottom: 0; color: #dce1eb; line-height: 1.7; }
+.resume-details { display: grid; gap: 38px; }
+.resume-details > section > h2 { margin-bottom: 16px; color: var(--accent); }
+.resume-detail-card { padding: 16px 18px; border-left: 2px solid rgba(25,184,237,.65); border-bottom: 1px solid rgba(255,255,255,.04); }
+.resume-detail-card strong { display: block; font-size: 16px; }
+.resume-detail-card p { margin: 5px 0 4px !important; color: #dce1eb !important; font-size: 15px !important; }
+.resume-detail-card span { color: var(--muted); font-size: 14px; }
+.resume-skills { display: flex; flex-wrap: wrap; gap: 9px; }
+.resume-skills span { padding: 7px 12px; border-radius: 999px; background: rgba(25,184,237,.08); border: 1px solid rgba(25,184,237,.65); color: #dce1eb; font-size: 14px; }
+.resume-links { display: flex; gap: 18px; margin-top: 20px; }
+.resume-links a { color: var(--accent); text-decoration: none; font-weight: 700; }
+.resume-preview-heading { display: flex; justify-content: space-between; align-items: center; margin: 55px 0 14px; }
+.resume-preview-heading h2 { margin: 0; }
+.resume-preview-heading div { display: flex; gap: 10px; }
+.resume-preview-heading a { color: var(--accent); border: 1px solid rgba(25,184,237,.6); border-radius: 6px; padding: 7px 12px; text-decoration: none; }
+.resume-preview { height: 760px; position: relative; overflow: hidden; border-radius: 12px; background: #eff1f4; box-shadow: 0 25px 70px rgba(0,0,0,.35); }
+.pdf-toolbar { height: 46px; position: relative; z-index: 2; display: grid; grid-template-columns: 60px 1fr 100px; align-items: center; padding: 0 16px; color: #dce1eb; background: #272a31; font-size: 13px; }
+.resume-preview iframe { width: 100%; height: calc(100% - 46px); border: 0; position: relative; z-index: 1; }
+.resume-preview-placeholder { position: absolute; inset: 46px 0 0; z-index: 0; display: grid; place-content: center; justify-items: center; color: #657080; text-align: center; }
+.resume-preview-placeholder span { width: 64px; height: 76px; display: grid; place-items: center; margin-bottom: 16px; border-radius: 4px; background: #fff; border: 1px solid #cbd1da; color: #d44; font-weight: 800; box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+.resume-preview-placeholder strong { font-size: 20px; color: #333a44; }
+.resume-preview-placeholder p { color: #657080 !important; font-size: 14px !important; }
 .contact-page { text-align: center; }
 .contact-lead { color: var(--muted); font-size: 18px; }
 .contact-main { display: inline-flex; gap: 20px; margin: 25px 0 50px; }
