@@ -1,5 +1,6 @@
+import resumeFile from '../assets/HAMJATH_KHAN_Resume.pdf';
+
 export default function Resume() {
- const resumeFile = '/Hamjath-Khan-N-Resume.pdf';
  return (
   <section className="page-section resume-page">
    <div className="resume-heading">
@@ -95,14 +96,14 @@ export default function Resume() {
    <div className="resume-preview">
     <div className="pdf-toolbar">
      <span>☰</span>
-     <span>Hamjath-Khan-N-Resume.pdf</span>
+     <span>HAMJATH_KHAN_Resume.pdf</span>
      <span>100% +</span>
     </div>
     <iframe src={`${resumeFile}#toolbar=0&navpanes=0`} title="Hamjath Khan N resume preview"/>
     <div className="resume-preview-placeholder">
      <span>PDF</span>
      <strong>Resume preview will appear here</strong>
-     <p>Add <code>Hamjath-Khan-N-Resume.pdf</code> to the public folder.</p>
+     <p>Resume document could not be loaded.</p>
     </div>
    </div>
   </section>
