@@ -12,7 +12,7 @@ export const projects = [
 
 export const skillGroups = [
  ['Programming',['C#','Python','JavaScript','SQL']],
- ['Frameworks',['ASP.NET MVC','.NET','React','Flask']],
- ['AI & Data',['Machine Learning','Computer Vision','Deep Learning','Data Science']],
- ['Tools',['Git','GitHub','SQL Server','Docker','REST APIs']],
+ ['Frameworks',['ASP.NET MVC','.NET','React','Flask','Django']],
+ ['AI & Data',['Machine Learning','Computer Vision','Deep Learning','Data Science','LLMs','RAG','Tockenization','Vector DBs']],
+ ['Tools',['Git','GitHub','SQL Server','Docker','REST APIs','Postman','Visual Studio','SSMS']],
 ];
