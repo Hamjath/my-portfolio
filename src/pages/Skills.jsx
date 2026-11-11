@@ -1,33 +1,24 @@
 import { skillGroups } from '../data/portfolioData';
 
- const iconNames = {
-   C: 'c',
-   'C#': 'csharp',
-   Python: 'python',
-   JavaScript: 'javascript',
-   SQL: 'azuresqldatabase',
-   'ASP.NET MVC': 'dot-net',
-   '.NET': 'dotnetcore',
-   React: 'react',
-   Flask: 'flask',
-   Django: 'django',
-   Git: 'git',
-   GitHub: 'github',
-   'SQL Server': 'microsoftsqlserver',
-   Docker: 'docker',
-   Postman: 'postman',
-   'Visual Studio': 'visualstudio',
-   SSMS: 'microsoftsqlserver',
-   'Machine Learning': 'tensorflow',
-   'Computer Vision': 'opencv',
-   'Deep Learning': 'tensorflow',
-   'Data Science': 'python',
-   LLMs: 'python',
-   RAG: 'python',
-   Tockenization: 'python',
-   'Vector DBs': 'postgresql',
-   'REST APIs': 'swagger',
- };
+const skillIcons = {
+  'C#': 'csharp/csharp-original.svg',
+  Python: 'python/python-original.svg',
+  JavaScript: 'javascript/javascript-original.svg',
+  'ASP.NET MVC': 'dotnetcore/dotnetcore-original.svg',
+  '.NET': 'dotnetcore/dotnetcore-original.svg',
+  React: 'react/react-original.svg',
+  Flask: 'flask/flask-original.svg',
+  Django: 'django/django-plain.svg',
+  Git: 'git/git-original.svg',
+  GitHub: 'github/github-original.svg',
+  'SQL Server': 'microsoftsqlserver/microsoftsqlserver-original.svg',
+  Docker: 'docker/docker-original.svg',
+  Postman: 'postman/postman-original.svg',
+  'Visual Studio': 'visualstudio/visualstudio-original.svg',
+  SSMS: 'microsoftsqlserver/microsoftsqlserver-original.svg',
+  'Computer Vision': 'opencv/opencv-original.svg',
+  'REST APIs': 'swagger/swagger-original.svg',
+};
 
  const nodeColors = [
    '#19b8ed', '#61dafb', '#ffca28', '#ef5350', '#00d084',
@@ -65,7 +56,7 @@ import { skillGroups } from '../data/portfolioData';
     <h1 className="skills-page-title">Skills</h1>
     <div className="skills-orbit" aria-label="Technical skills">
      {skills.map((skill, index) => {
-      const iconName = iconNames[skill];
+      const iconPath = skillIcons[skill];
       const [driftX, driftY, duration] = driftPatterns[index % driftPatterns.length];
       return (
        <article
@@ -86,13 +77,20 @@ import { skillGroups } from '../data/portfolioData';
         title={skill}
        >
         <span className="skill-node-icon" aria-hidden="true">
-         {iconName ? (
+         {iconPath && (
           <img
-           src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${iconName}/${iconName}-original.svg`}
+           src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${iconPath}`}
            alt=""
-           loading="eager"
+           loading="lazy"
+           onError={event => {
+            event.currentTarget.hidden = true;
+            event.currentTarget.nextElementSibling.hidden = false;
+           }}
           />
-         ) : skill.slice(0, 2).toUpperCase()}
+         )}
+         <span className="skill-icon-fallback" hidden={Boolean(iconPath)}>
+          {skill.slice(0, 2).toUpperCase()}
+         </span>
         </span>
         <strong>{skill}</strong>
        </article>
