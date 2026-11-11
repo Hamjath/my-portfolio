@@ -433,6 +433,12 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 .contact-form button:hover, .filters button:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 8px 24px rgba(25,184,237,.18); }
 .contact-form input::placeholder, .contact-form textarea::placeholder { color: #737b85; }
 .contact-form button { height: 44px; border: 0; border-radius: 8px; margin-top: 12px; background: linear-gradient(90deg, #00b4ff 0%, #00ffe0 100%); color: #fff; box-shadow: 0 10px 30px rgba(0,180,255,.16); color: #fff; font-weight: 700; cursor: pointer; }
+.contact-email-fallback { max-width: 680px; margin: 22px auto 0; padding: 18px; border: 1px solid rgba(25,184,237,.3); border-radius: 10px; background: rgba(25,184,237,.05); text-align: left; }
+.contact-email-fallback p { margin: 0 0 12px; color: #dce1eb; line-height: 1.6; }
+.contact-email-fallback a { color: var(--accent); }
+.contact-email-fallback button { border: 1px solid rgba(25,184,237,.65); border-radius: 7px; padding: 9px 13px; background: rgba(25,184,237,.1); color: var(--text); cursor: pointer; }
+.contact-email-fallback .contact-copy-status { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+.contact-email-fallback textarea { display: block; width: 100%; min-height: 150px; margin-top: 12px; padding: 10px; border: 1px solid var(--border); border-radius: 6px; background: rgba(0,0,0,.3); color: var(--text); resize: vertical; }
 .home-connect { grid-column: 1 / -1; margin-top: 70px; text-align: center; }
 .home-connect h2 { margin: 0 0 1rem; font-size: 26px; font-weight: 600; }
 .social-grid { display: flex; grid-template-columns: none; justify-content: center; gap: 22px; }
