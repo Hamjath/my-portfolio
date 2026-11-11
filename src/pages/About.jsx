@@ -19,37 +19,46 @@ export default function About() {
    <h1>About Me</h1>
    <div className="about-intro">
     <img src={profileImage} alt="Hamjath Khan N"/>
-    <div>
-     <p>I’m a passionate Software Engineer with hands-on experience in Full-Stack web application development and a growing specialization in Artificial Intelligence.</p>
-     <p>I hold a B.E. in Electrical and Electronics Engineering from KPR Institute of Engineering and Technology, Coimbatore, and am currently working as a Junior Software Engineer at Equiniti India while pursuing an M.Tech in Artificial Intelligence and Data Science at SRM Institute of Science and Technology, Chennai.</p>
-     <p>At Equiniti India, I have gained more than three years of combined internship and full-time experience developing and maintaining scalable enterprise web applications. I work with technologies including C#, .NET, MVC, MS SQL Server, XML, HTML, and Bootstrap, and have contributed to improving system performance, automating workflows, and simplifying deployment processes across multiple projects.</p>
-     <p>My current focus is on building intelligent, AI-powered applications using Machine Learning, Generative AI, and Large Language Models. I’m particularly interested in Agentic AI frameworks, Retrieval-Augmented Generation (RAG) pipelines, and AI-driven software engineering that bridges traditional development with modern AI capabilities.</p>
-     <p>I’m motivated to solve real-world problems through software, data, and AI while continuously learning, experimenting, and building impactful solutions.</p>
-     <p><strong>Core Skills:</strong> Full-Stack Development · .NET Framework · C# · Python · SQL · MVC · REST APIs · Artificial Intelligence · Machine Learning · LLMs · Generative AI · Agentic AI · Prompt Engineering · MLOps · AWS · Azure</p>
-     <p>I’m open to connecting regarding opportunities or collaborations in AI development, software engineering, and intelligent application design.</p>
+    <div className="about-intro-copy">
+     <p className="about-lead">I’m a software engineer focused on full-stack .NET development, with a growing specialization in artificial intelligence.</p>
+     <p>I work as a Junior Software Engineer at Equiniti India and am pursuing an M.Tech in Artificial Intelligence and Data Science at SRM Institute of Science and Technology. I hold a B.E. in Electrical and Electronics Engineering from KPR Institute of Engineering and Technology.</p>
+     <p>My current interests include machine learning, generative AI, large language models, agentic systems, and retrieval-augmented generation. I enjoy applying these technologies to practical software challenges.</p>
+     <h2>Areas of focus</h2>
+     <div className="about-focus-list">
+      {['Full-Stack Development', '.NET', 'C#', 'Python', 'SQL', 'REST APIs', 'Machine Learning', 'LLMs', 'Generative AI', 'Agentic AI', 'Prompt Engineering', 'MLOps', 'AWS', 'Azure'].map(skill => <span key={skill}>{skill}</span>)}
+     </div>
+     <p className="about-open-to">Open to opportunities and collaborations in AI development, software engineering, and intelligent application design.</p>
     </div>
    </div>
+   <div className="about-highlights" aria-label="Career highlights">
+    <article><strong>80+</strong><span>production and high-priority bugs resolved</span></article>
+    <article><strong>20–30</strong><span>feature enhancements delivered</span></article>
+    <article><strong>Top 1%</strong><span>intern product-assessment ranking</span></article>
+   </div>
    <div className="about-grid">
-    <article>
+    <article className="about-panel">
      <h2>Experience</h2>
-     <h3>Junior Software Engineer</h3>
-     <p><strong>Equiniti India · Chennai</strong><br/>September 2024 — Present <span className="experience-duration">· {experienceDuration(2024, 9)}</span></p>
-     <ul>
-      <li>Worked on a large-scale legacy enterprise application, resolving 80+ production and high-priority bugs and delivering 20–30 feature enhancements through cross-functional collaboration.</li>
-      <li>Developed and enhanced backend and UI components using C#, .NET, ASP.NET MVC, Web Forms, ADO.NET, MS SQL, HTML, and TFS, improving maintainability and performance.</li>
-      <li>Supported onboarding and new team members through knowledge-transfer sessions covering technical architecture and business workflows.</li>
-      <li>Contributed to team culture through office initiatives and team events.</li>
-      <li><strong>Tech stack:</strong> C#, .NET Framework, ASP.NET MVC, Web Forms, Azure DevOps, MS SQL, SSMS, stored procedures, HTML, and TFS.</li>
-     </ul>
-     <h3>Intern Software Engineer</h3>
-     <p><strong>Equiniti India · Chennai</strong><br/>January 2024 — September 2024 <span className="experience-duration">· {experienceDuration(2024, 1, 2024, 9)}</span></p>
-     <ul>
-      <li>Completed knowledge-transfer sessions on enterprise products and achieved a 92% product-assessment score, ranking in the top 1% among interns.</li>
-      <li>Designed and developed a full-stack Cab Booking Management web application within a two-month deadline, collaborating with a team of interns.</li>
-      <li>Implemented end-to-end functionality using C#, ASP.NET MVC, MS SQL, HTML, and CSS.</li>
-     </ul>
+     <div className="experience-item">
+      <h3>Junior Software Engineer</h3>
+      <p className="about-meta"><strong>Equiniti India · Chennai</strong><br/>September 2024 — Present <span className="experience-duration">· {experienceDuration(2024, 9)}</span></p>
+      <ul>
+       <li>Resolved 80+ production and high-priority bugs and delivered 20–30 feature enhancements for a large-scale enterprise application.</li>
+       <li>Developed backend and UI components using C#, .NET, ASP.NET MVC, Web Forms, ADO.NET, MS SQL, HTML, and TFS.</li>
+       <li>Supported onboarding with knowledge-transfer sessions on technical architecture and business workflows.</li>
+       <li><strong>Tech stack:</strong> C#, .NET Framework, ASP.NET MVC, Web Forms, Azure DevOps, MS SQL, SSMS, stored procedures, HTML, and TFS.</li>
+      </ul>
+     </div>
+     <div className="experience-item">
+      <h3>Intern Software Engineer</h3>
+      <p className="about-meta"><strong>Equiniti India · Chennai</strong><br/>January 2024 — September 2024 <span className="experience-duration">· {experienceDuration(2024, 1, 2024, 9)}</span></p>
+      <ul>
+       <li>Scored 92% in the enterprise product assessment, ranking in the top 1% among interns.</li>
+       <li>Designed and built a full-stack Cab Booking Management web application in two months with a team of interns.</li>
+       <li>Implemented end-to-end functionality using C#, ASP.NET MVC, MS SQL, HTML, and CSS.</li>
+      </ul>
+     </div>
     </article>
-    <article>
+    <article className="about-panel">
      <h2>Education</h2>
      <div className="education-item">
       <h3>SRM Institute of Science and Technology (SRMIST)</h3>
