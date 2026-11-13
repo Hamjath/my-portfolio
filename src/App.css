@@ -380,6 +380,8 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 .resume-identity h2 { margin: 0 0 5px; font-size: 24px; color: var(--accent); }
 .resume-identity p { margin: 2px 0; color: #dce1eb; }
 .resume-identity ul { margin: 14px 0 0; padding: 0; display: grid; gap: 4px; list-style: none; color: var(--muted); font-size: 13px; }
+.resume-identity ul li { display: grid; grid-template-columns: 18px minmax(0, 1fr); column-gap: 4px; align-items: start; }
+.resume-identity ul li > span:first-child { text-align: center; }
 .resume-summary h3 { margin-top: 0; color: var(--accent); }
 .resume-summary p { margin-bottom: 0; color: #dce1eb; line-height: 1.7; }
 .resume-details { display: grid; gap: 38px; }

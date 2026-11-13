@@ -17,9 +17,9 @@ export default function Resume() {
       <p>Full-Stack .NET Developer</p>
       <p>AI &amp; Machine Learning Engineer</p>
       <ul>
-       <li>📍 Chennai, India</li>
-       <li>✉️ h87official@gmail.com</li>
-       <li>📞 +91 63740 66607</li>
+       <li><span aria-hidden="true">📍</span><span>Chennai, India</span></li>
+       <li><span aria-hidden="true">✉️</span><span>h87official@gmail.com</span></li>
+       <li><span aria-hidden="true">📞</span><span>+91 63740 66607</span></li>
       </ul>
      </div>
     </article>
