@@ -144,7 +144,6 @@ main { flex: 1; }
 .project-card button b { margin-left: 5px; }
 .projects-page { max-width: 1180px; }
 .projects-page > h1 { margin-bottom: 8px; }
-.projects-page > h1 span { color: var(--accent); }
 .projects-lead { color: var(--muted); margin: 0 0 28px; }
 .projects-page .filters { flex-wrap: wrap; }
 .projects-page .project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
@@ -274,8 +273,7 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 .about-grid article li { margin-bottom: 10px; }
 .about-grid article ul strong { color: var(--text); }
 .skill-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-.skills-page { width: min(960px, calc(100% - 48px)); padding-top: 12px; padding-bottom: 12px; }
-.skills-page-kicker, .skills-page-title { display: none; }
+.skills-page { width: min(960px, calc(100% - 48px)); padding-top: 40px; padding-bottom: 40px; }
 .skills-orbit {
  position: relative;
  height: min(570px, calc(100vh - 120px));
@@ -373,8 +371,7 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 .resume-card a:active, .contact-main:active, .contact-form button:active, .filters button:active { transform: scale(.96); }
 .resume-page { max-width: 1180px; }
 .resume-heading { margin-bottom: 30px; }
-.resume-heading h1 { margin-bottom: 8px; }
-.resume-heading h1 span { filter: hue-rotate(155deg); }
+.resume-heading h1 { font-size: clamp(36px, 5vw, 48px); letter-spacing: -1px; margin: 8px 0; }
 .resume-heading > p:last-child { color: var(--muted); }
 .resume-profile { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 50px; }
 .resume-profile article { min-height: 180px; padding: 24px; border: 1px solid rgba(25,184,237,.18); border-radius: 12px; background: rgba(255,255,255,.025); }

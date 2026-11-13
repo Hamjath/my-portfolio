@@ -5,7 +5,7 @@ export default function Resume() {
   <section className="page-section resume-page">
    <div className="resume-heading">
     <p className="page-kicker">Curriculum vitae</p>
-    <h1><span>📄</span> Resume</h1>
+    <h1>Resume</h1>
     <p>A quick glance at my journey.</p>
    </div>
 
