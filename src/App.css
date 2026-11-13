@@ -98,8 +98,12 @@ main { flex: 1; }
   100% { background-position: 200% 50%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-name span { animation: none; }
-  .page-reveal, .portrait-wrap, .portrait-wrap::before, .hero-copy, .portrait { animation: none !important; }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
 }
 .eyebrow { color: var(--accent); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
 .hero-role { color: #cfd1d8; font-size: 20px; margin: 18px 0 20px; }
@@ -406,7 +410,11 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
   .resume-profile { grid-template-columns: 1fr; }
   .resume-identity { grid-template-columns: 60px 1fr; }
   .resume-avatar { width: 60px; height: 60px; }
-  .resume-preview-heading { align-items: flex-start; gap: 14px; }
+  .resume-preview-heading { align-items: flex-start; flex-wrap: wrap; gap: 14px; }
+  .resume-preview-heading div { flex-wrap: wrap; }
+  .pdf-toolbar { grid-template-columns: 28px minmax(0, 1fr) auto; gap: 8px; padding: 0 10px; font-size: 11px; }
+  .pdf-toolbar span:nth-child(2) { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .pdf-toolbar span:nth-child(3) { white-space: nowrap; }
   .resume-preview { height: 560px; }
 }
 .contact-page { text-align: center; }
@@ -452,6 +460,8 @@ footer { margin-top: auto; text-align: center; padding: 28px; color: #777b86; fo
 @media (max-width: 699px) {
  .page-section { width: calc(100% - 40px); padding-top: 35px; }
  .about-intro, .about-grid, .skill-grid { grid-template-columns: 1fr; }
+ .social-grid { gap: 10px; }
+ .social-grid a, .social-icon { width: 56px; height: 56px; }
  .about-intro { text-align: center; }
  .about-intro img { margin: 0 auto; }
  .about-focus-list { justify-content: center; }
