@@ -20,8 +20,17 @@ export default function Projects({ onOpenProject }) {
        <h3>{project[2]}</h3><p>{project[3]}</p>
        <div className="tech-list">{project[4].map(technology=><span key={technology}>{technology}</span>)}</div>
        <div className="project-actions">
-        <button className="details-button" onClick={() => onOpenProject(project)}>View Details <b>→</b></button>
-        <button className="code-button" onClick={() => onOpenProject(project)}>‹› Code</button>
+        {project[6] ? (
+         <>
+          <a className="details-button" href={project[6].liveUrl} target="_blank" rel="noreferrer">Live Demo <b>↗</b></a>
+          <a className="code-button" href={project[6].repositoryUrl} target="_blank" rel="noreferrer">Source Code <b>↗</b></a>
+         </>
+        ) : (
+         <>
+          <button className="details-button" onClick={() => onOpenProject(project)}>View Details <b>→</b></button>
+          <button className="code-button" onClick={() => onOpenProject(project)}>‹› Code</button>
+         </>
+        )}
        </div>
       </div>
      </article>
