@@ -11,6 +11,10 @@ export const projects = [
  }],
  ['Full-Stack','Developer Automation','AI-Assisted DLCF-to-SQL Tool','Converts database specifications into structured T-SQL scripts.',['Python','SQL Server','T-SQL'],dlcfSqlImage],
  ['Full-Stack','Full-Stack MVC','Cab Booking Management System','An end-to-end booking and fleet management application.',['C#','.NET MVC','MS SQL'],cabBookingImage],
+ ['Full-Stack','Calculator','Calculator Flask','A simple calculator application built with Flask.',['Python','Flask'],cabBookingImage,{
+  repositoryUrl: 'https://github.com/Hamjath/Flask_Calculator',
+  liveUrl: 'https://github.com/Hamjath/Flask_Calculator',
+ }],
 ];
 
 export const skillGroups = [
