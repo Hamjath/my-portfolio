@@ -13,7 +13,7 @@ export const projects = [
  ['Full-Stack','Full-Stack MVC','Cab Booking Management System','An end-to-end booking and fleet management application.',['C#','.NET MVC','MS SQL'],cabBookingImage],
  ['Full-Stack','Calculator','Calculator Flask','A simple calculator application built with Flask.',['Python','Flask'],cabBookingImage,{
   repositoryUrl: 'https://github.com/Hamjath/Flask_Calculator',
-  liveUrl: 'https://github.com/Hamjath/Flask_Calculator',
+  liveUrl: 'https://calculator-flask-4d3g.onrender.com',
  }],
 ];
 
